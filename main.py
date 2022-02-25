@@ -24,7 +24,6 @@ def find_flats(place, rent, living_space, number_of_rooms):
         flat_cards = soup.find_all(class_="EstateItem-1c115")
         add_flats_to_list(flats, flat_cards)
 
-    print(flats)
     save_flats_to_text_file(flats)
     driver.close()
 
